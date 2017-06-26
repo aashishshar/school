@@ -1,31 +1,249 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿
+@{
+    Layout = null;
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-</div>
+<!DOCTYPE html>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <style>
+        .logoImage {
+            background: url('images/sps.png') no-repeat center right;
+            display: block;
+            height: 84px;
+            width: 264px;
+            margin-top:0px;
+        }
+    </style>
+</head>
+<body>
+   
+@Html.Partial("_Header")
+
+    <div class="fh5co-slider">
+        <div class="owl-carousel owl-carousel-fullwidth">
+            <div class="item" style="background-image:url(images/slide_1.jpg)">
+                <div class="fh5co-overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="fh5co-owl-text-wrap">
+                                <div class="fh5co-owl-text text-center to-animate">
+                                    <h1 class="fh5co-lead">Booster Studio</h1>
+                                    <h2 class="fh5co-sub-lead">Booster is a free responsive HTML5 template using bootstrap released under Creative Commons 3.0. Lovely crafted by <a href="#">FREEHTML5.co</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item" style="background-image:url(images/slide_2.jpg)">
+                <div class="fh5co-overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="fh5co-owl-text-wrap">
+                                <div class="fh5co-owl-text text-center to-animate">
+                                    <h1 class="fh5co-lead">A Digital Studio</h1>
+                                    <h2 class="fh5co-sub-lead">Booster is a free responsive HTML5 template using bootstrap released under Creative Commons 3.0. Lovely crafted by <a href="#">FREEHTML5.co</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item" style="background-image:url(images/slide_3.jpg)">
+                <div class="fh5co-overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="fh5co-owl-text-wrap">
+                                <div class="fh5co-owl-text text-center to-animate">
+                                    <h1 class="fh5co-lead">Branding, UX under in one roof</h1>
+                                    <h2 class="fh5co-sub-lead">Booster is a free responsive HTML5 template using bootstrap released under Creative Commons 3.0. Lovely crafted by <a href="#">FREEHTML5.co</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item" style="background-image:url(images/slide_4.jpg)">
+                <div class="fh5co-overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="fh5co-owl-text-wrap">
+                                <div class="fh5co-owl-text text-center to-animate">
+                                    <h1 class="fh5co-lead">Creative Folks</h1>
+                                    <h2 class="fh5co-sub-lead">Booster is a free responsive HTML5 template using bootstrap released under Creative Commons 3.0. Lovely crafted by <a href="#">FREEHTML5.co</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    <div id="fh5co-main">
+        <!-- Features -->
+        <div id="fh5co-features">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 class="fh5co-section-lead">Key Features</h2>
+                        <h3 class="fh5co-section-sub-lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</h3>
+                    </div>
+                    <div class="fh5co-spacer fh5co-spacer-md"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 fh5co-feature-border">
+                        <div class="fh5co-feature">
+                            <div class="fh5co-feature-icon to-animate">
+                                <i class="icon-bag"></i>
+                            </div>
+                            <div class="fh5co-feature-text">
+                                <h3>Shopping Bag</h3>
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                                <p><a href="#">Read more</a></p>
+                            </div>
+                        </div>
+                        <div class="fh5co-feature no-border">
+                            <div class="fh5co-feature-icon to-animate">
+                                <i class="icon-head"></i>
+                            </div>
+                            <div class="fh5co-feature-text">
+                                <h3>User Satisfaction</h3>
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                                <p><a href="#">Read more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="fh5co-feature">
+                            <div class="fh5co-feature-icon to-animate">
+                                <i class="icon-microphone"></i>
+                            </div>
+                            <div class="fh5co-feature-text">
+                                <h3>Voice Recording</h3>
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                                <p><a href="#">Read more</a></p>
+                            </div>
+                        </div>
+                        <div class="fh5co-feature no-border">
+                            <div class="fh5co-feature-icon to-animate">
+                                <i class="icon-clock2"></i>
+                            </div>
+                            <div class="fh5co-feature-text">
+                                <h3>24/7 Support</h3>
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                                <p><a href="#">Read more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features -->
+
+        <div class="fh5co-spacer fh5co-spacer-lg"></div>
+        <!-- Products -->
+        <div class="container" id="fh5co-products">
+            <div class="row text-left">
+                <div class="col-md-8">
+                    <h2 class="fh5co-section-lead">Products</h2>
+                    <h3 class="fh5co-section-sub-lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</h3>
+                </div>
+                <div class="fh5co-spacer fh5co-spacer-md"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                    <div class="fh5co-product">
+                        <img src="images/slide_1.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                        <h4>Lorem ipsum</h4>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        <p><a href="#">Read more</a></p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                    <div class="fh5co-product">
+                        <img src="images/slide_2.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                        <h4>Architecto nihil</h4>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        <p><a href="#">Read more</a></p>
+                    </div>
+                </div>
+                <div class="visible-sm-block visible-xs-block clearfix"></div>
+                <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                    <div class="fh5co-product">
+                        <img src="images/slide_3.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                        <h4>Animi earum</h4>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        <p><a href="#">Read more</a></p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+                    <div class="fh5co-product">
+                        <img src="images/slide_4.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
+                        <h4>Recusandae iste</h4>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        <p><a href="#">Read more</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Products -->
+        <div class="fh5co-spacer fh5co-spacer-lg"></div>
+        <div id="fh5co-clients">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-client-logo text-center to-animate"><img src="images/client_1.png" alt="FREEHTML5.co Free HTML5 Bootstrap Template" class="img-responsive"></div>
+                    <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-client-logo text-center to-animate"><img src="images/client_2.png" alt="FREEHTML5.co Free HTML5 Bootstrap Template" class="img-responsive"></div>
+                    <div class="visible-sm-block visible-xs-block clearfix"></div>
+                    <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-client-logo text-center to-animate"><img src="images/client_3.png" alt="FREEHTML5.co Free HTML5 Bootstrap Template" class="img-responsive"></div>
+                    <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-client-logo text-center to-animate"><img src="images/client_4.png" alt="FREEHTML5.co Free HTML5 Bootstrap Template" class="img-responsive"></div>
+                </div>
+            </div>
+        </div>
+        <div class="fh5co-bg-section" style="background-image: url(images/slide_2.jpg); background-attachment: fixed;">
+            <div class="fh5co-overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="fh5co-hero-wrap">
+                            <div class="fh5co-hero-intro text-center">
+                                <h1 class="fh5co-lead"><span class="quo">&ldquo;</span>Design is not just what it looks like and feels like. Design is how it works. <span class="quo">&rdquo;</span></h1>
+                                <p class="author">&mdash; <cite>Steve Jobs</cite></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+
+
+    <footer id="fh5co-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <p>&copy; @DateTime.Now.Year - Surender Pal Sharma Degree College, Diholi Aligarh UP-202001</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+    @*@RenderSection("scripts", required: false)*@
+</body>
+</html>
