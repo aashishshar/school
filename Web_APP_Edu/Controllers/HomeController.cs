@@ -26,5 +26,12 @@ namespace Web_APP_Edu.Controllers
 
             return View();
         }
+
+        public ActionResult Courses()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
     }
 }
