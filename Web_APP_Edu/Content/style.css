@@ -6,8 +6,6 @@
   font-weight: normal;
   font-style: normal; }
 /*!
- * Bootstrap v3.3.5 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -3380,10 +3378,10 @@ tbody.collapse.in {
 
 .navbar-brand {
   float: left;
-  padding: 20px 20px;
+  padding: 0px 0px;
   font-size: 18px;
   line-height: 20px;
-  height: 60px; }
+  /*height: 0px;*/ }
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none; }
 .navbar-brand > img {
@@ -5232,7 +5230,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
   border-radius: 0px;
-  padding-left: 40px;
+  padding-left: 0px;
   padding-right: 40px;
   margin-bottom: 0;
   background: #fff;
@@ -5864,7 +5862,7 @@ pre {
   border: 2px solid transparent; }
 
 .owl-carousel-fullwidth .item, .owl-carousel-fullwidth .fh5co-owl-text-wrap {
-  height: 800px;
+  height:400px;
   display: table;
   width: 100%; }
 .owl-carousel-fullwidth .item {
