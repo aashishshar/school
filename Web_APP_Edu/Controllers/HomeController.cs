@@ -33,5 +33,12 @@ namespace Web_APP_Edu.Controllers
 
             return View();
         }
+
+        public ActionResult Gallery()
+        {
+            ViewBag.Message = "Your Gallery page.";
+
+            return View();
+        }
     }
 }

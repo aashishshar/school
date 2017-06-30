@@ -15,7 +15,9 @@ namespace Web_APP_Edu
 
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                     "~/assets/js/jquery.min.js", "~/assets/js/fancybox/jquery.fancybox.pack.js", "~/assets/js/jquery.mobile.customized.min.js",
-                               "~/assets/js/jquery.easing.1.3.js", "~/assets/js/camera.min.js", "~/assets/js/bootstrap.min.js", "~/assets/js/custom.js"));
+                               "~/assets/js/jquery.easing.1.3.js", "~/assets/js/camera.min.js", "~/assets/js/bootstrap.min.js","~/assets/js/jquery.cslider.js","~/assets/js/jquery.isotope.min.js", "~/assets/js/custom.js"));
+
+         
            
             //bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
             //                   ));
