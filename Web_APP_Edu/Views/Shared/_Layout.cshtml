@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
-    @Styles.Render("~/Content/css")
+    @Styles.Render("~/assets/css")
     @Scripts.Render("~/bundles/modernizr")
     <style>
         .logoImage {
@@ -18,43 +18,29 @@
 </head>
 <body>
     @Html.Partial("_Header")
-  
-    @*<div class="fh5co-page-heading">
+    <header id="head" class="secondary">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="fh5co-page-heading-lead">
-                        Left Sidebar
-                        <span class="fh5co-border"></span>
-                    </h1>
-
-                </div>
-            </div>
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing eliras scele!</p>
         </div>
-    </div>*@
+    </header>
 
-    <div id="fh5co-main">
-     
-        <div id="fh5co-features"><div class="container">
-    @RenderBody()</div>
-</div></div>
-          
-           
-                <footer id="fh5co-footer">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12">
-                                <p>&copy; @DateTime.Now.Year - Surender Pal Sharma Degree College, Diholi Aligarh UP-202001</p>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-              
-           
+    <section class="container">
+        @RenderBody()
+    </section>
 
-            @Scripts.Render("~/bundles/jquery")
-            @Scripts.Render("~/bundles/bootstrap")
+        @Html.Partial("_Footer")
 
-            @RenderSection("scripts", required: false)
+
+
+
+
+
+        @Scripts.Render("~/bundles/jquery")
+      
+
+        @RenderSection("scripts", required: false)
+
+
 </body>
 </html>
