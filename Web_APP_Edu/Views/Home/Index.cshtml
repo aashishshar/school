@@ -10,8 +10,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
-    @Styles.Render("~/Content/css")
+    @Styles.Render("~/assets/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
     <style>
         .logoImage {
             background: url('images/spslogo.jpg') no-repeat center right;
@@ -19,236 +20,201 @@
             width: 100px;
             margin-top: 0px !important;
             margin-left:0px;
-            float:left;
+        
         }
+
     </style>
-</head>
+
+   </head>
 <body>
    
 @Html.Partial("_Header")
+    <header id="head">
+    <div class="container">
+        <div class="heading-text">
+            <h1 class="animated flipInY delay1">Start Online Education</h1>
+            <p>Free Online education template for elearning and online education institute.</p>
+        </div>
 
-    <div class="fh5co-slider">
-        <div class="owl-carousel owl-carousel-fullwidth">
-            <div class="item" style="background-image:url(images/slide_1.jpg)">
-                <div class="fh5co-overlay"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="fh5co-owl-text-wrap">
-                                <div class="fh5co-owl-text text-center to-animate">
-                                    @*<h1 class="fh5co-lead">Booster Studio</h1>
-                                    <h2 class="fh5co-sub-lead">Booster is a free responsive HTML5 template using bootstrap released under Creative Commons 3.0. Lovely crafted by <a href="#">FREEHTML5.co</a></h2>*@
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="fluid_container">
+            <div class="camera_wrap camera_emboss pattern_1" id="camera_wrap_4">
+                <div class="logoImage">
+                    <h2>We develop.</h2>
                 </div>
-            </div>
-            <div class="item" style="background-image:url(images/slide_2.jpg)">
-                <div class="fh5co-overlay"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="fh5co-owl-text-wrap">
-                                <div class="fh5co-owl-text text-center to-animate">
-                                    @*<h1 class="fh5co-lead">A Digital Studio</h1>
-                                    <h2 class="fh5co-sub-lead">Booster is a free responsive HTML5 template using bootstrap released under Creative Commons 3.0. Lovely crafted by <a href="#">FREEHTML5.co</a></h2>*@
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div data-thumb="assets/images/slides/thumbs/img2.jpg" data-src="assets/images/slides/img2.jpg">
                 </div>
-            </div>
-            <div class="item" style="background-image:url(images/slide_3.jpg)">
-                <div class="fh5co-overlay"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="fh5co-owl-text-wrap">
-                                <div class="fh5co-owl-text text-center to-animate">
-                                    @*<h1 class="fh5co-lead">Branding, UX under in one roof</h1>
-                                    <h2 class="fh5co-sub-lead">Booster is a free responsive HTML5 template using bootstrap released under Creative Commons 3.0. Lovely crafted by <a href="#">FREEHTML5.co</a></h2>*@
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div data-thumb="assets/images/slides/thumbs/img3.jpg" data-src="assets/images/slides/img3.jpg">
                 </div>
-            </div>
-            @*<div class="item" style="background-image:url(images/slide_4.jpg)">
-                <div class="fh5co-overlay"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="fh5co-owl-text-wrap">
-                                <div class="fh5co-owl-text text-center to-animate">
-                                    <h1 class="fh5co-lead">Creative Folks</h1>
-                                    <h2 class="fh5co-sub-lead">Booster is a free responsive HTML5 template using bootstrap released under Creative Commons 3.0. Lovely crafted by <a href="#">FREEHTML5.co</a></h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>*@
+            </div><!-- #camera_wrap_3 -->
+        </div><!-- .fluid_container -->
+    </div>
+</header>
+  
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="grey-box-icon">
+                    <div class="icon-box-top grey-box-icon-pos">
+                        <img src="~/assets/images/1.png" alt="" />
+                    </div><!--icon box top -->
+                    <h4>Online Courses</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus eleifend risus ut congue
+                        eset nec lacus elit dor broma.
+                    </p>
+                    <p><a href="#"><em>Read More</em></a></p>
+                </div><!--grey box -->
+            </div><!--/span3-->
+            <div class="col-md-3">
+                <div class="grey-box-icon">
+                    <div class="icon-box-top grey-box-icon-pos">
+                        <img src="~/assets/images/2.png" alt="" />
+                    </div><!--icon box top -->
+                    <h4>Meet our Staff</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus eleifend risus ut congue
+                        eset nec lacus elit dor broma.
+                    </p>
+                    <p><a href="#"><em>Read More</em></a></p>
+                </div><!--grey box -->
+            </div><!--/span3-->
+            <div class="col-md-3">
+                <div class="grey-box-icon">
+                    <div class="icon-box-top grey-box-icon-pos">
+                        <img src="~/assets/images/3.png" alt="" />
+                    </div><!--icon box top -->
+                    <h4>Latest Updates</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus eleifend risus ut congue
+                        eset nec lacus elit dor broma.
+                    </p>
+                    <p><a href="#"><em>Read More</em></a></p>
+                </div><!--grey box -->
+            </div><!--/span3-->
+            <div class="col-md-3">
+                <div class="grey-box-icon">
+                    <div class="icon-box-top grey-box-icon-pos">
+                        <img src="~/assets/images/4.png" alt="" />
+                    </div><!--icon box top -->
+                    <h4>Placements</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus eleifend risus ut congue
+                        eset nec lacus elit dor broma.
+                    </p>
+                    <p><a href="#"><em>Read More →</em></a></p>
+                </div><!--grey box -->
+            </div><!--/span3-->
         </div>
     </div>
-    <div id="fh5co-main">
-        <!-- Features -->
-        <div id="fh5co-features">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-    SPS  College is one of the premier professional college in India, established in to ensure all round development and diverse educational needs of the students.
-    SPS College is affiliated with B. R. Ambedkar University Agra having co-education with excellent  education in the areas of Management, Information Technology and Education.
-    The institute aims at imparting quality education in the various faculties like Science, Arts, Commerce, Law, Education, Computer Application, Business Administration and library science .
-    This Institute was established in the year 2004 by Sunder Pal Sharma. It is situated  Diholi, Aligarh.
-                    </div>
-                    <div class="fh5co-spacer fh5co-spacer-md">
-
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 fh5co-feature-border">
-                        <div class="fh5co-feature">
-                            <div class="fh5co-feature-icon to-animate">
-                                <i class="icon-graduation-cap"></i>
-                            </div>
-                            <div class="fh5co-feature-text">
-                                <h3>Students</h3>
-                                <p>Most Intelligent And Brilliant Students</p>
-                                <p><a href="#">Read more</a></p>
-                            </div>
-                        </div>
-                        <div class="fh5co-feature no-border">
-                            <div class="fh5co-feature-icon to-animate">
-                                <i class="icon-university"></i>
-                            </div>
-                            <div class="fh5co-feature-text">
-                                <h3>User Satisfaction</h3>
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-                                <p><a href="#">Read more</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6">
-                        <div class="fh5co-feature">
-                            <div class="fh5co-feature-icon to-animate">
-                                <i class="icon-microphone"></i>
-                            </div>
-                            <div class="fh5co-feature-text">
-                                <h3>Voice Recording</h3>
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-                                <p><a href="#">Read more</a></p>
-                            </div>
-                        </div>
-                        <div class="fh5co-feature no-border">
-                            <div class="fh5co-feature-icon to-animate">
-                                <i class="icon-clock2"></i>
-                            </div>
-                            <div class="fh5co-feature-text">
-                                <h3>24/7 Support</h3>
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-                                <p><a href="#">Read more</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Features -->
-
-        <div class="fh5co-spacer fh5co-spacer-lg"></div>
-        <!-- Products -->
-        <div class="container" id="fh5co-products">
-            <div class="row text-left">
-                <div class="col-md-8">
-                    <h2 class="fh5co-section-lead">Products</h2>
-                    <h3 class="fh5co-section-sub-lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</h3>
-                </div>
-                <div class="fh5co-spacer fh5co-spacer-md"></div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
-                    <div class="fh5co-product">
-                        <img src="images/slide_1.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
-                        <h4>Lorem ipsum</h4>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <p><a href="#">Read more</a></p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
-                    <div class="fh5co-product">
-                        <img src="images/slide_2.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
-                        <h4>Architecto nihil</h4>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <p><a href="#">Read more</a></p>
-                    </div>
-                </div>
-                <div class="visible-sm-block visible-xs-block clearfix"></div>
-                <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
-                    <div class="fh5co-product">
-                        <img src="images/slide_3.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
-                        <h4>Animi earum</h4>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <p><a href="#">Read more</a></p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
-                    <div class="fh5co-product">
-                        <img src="images/slide_4.jpg" alt="FREEHTML5.co Free HTML5 Template Bootstrap" class="img-responsive img-rounded to-animate">
-                        <h4>Recusandae iste</h4>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <p><a href="#">Read more</a></p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <!-- Products -->
-        <div class="fh5co-spacer fh5co-spacer-lg"></div>
-        <div id="fh5co-clients">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-client-logo text-center to-animate"><img src="images/client_1.png" alt="FREEHTML5.co Free HTML5 Bootstrap Template" class="img-responsive"></div>
-                    <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-client-logo text-center to-animate"><img src="images/client_2.png" alt="FREEHTML5.co Free HTML5 Bootstrap Template" class="img-responsive"></div>
-                    <div class="visible-sm-block visible-xs-block clearfix"></div>
-                    <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-client-logo text-center to-animate"><img src="images/client_3.png" alt="FREEHTML5.co Free HTML5 Bootstrap Template" class="img-responsive"></div>
-                    <div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-client-logo text-center to-animate"><img src="images/client_4.png" alt="FREEHTML5.co Free HTML5 Bootstrap Template" class="img-responsive"></div>
-                </div>
-            </div>
-        </div>
-        <div class="fh5co-bg-section" style="background-image: url(images/slide_2.jpg); background-attachment: fixed;">
-            <div class="fh5co-overlay"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="fh5co-hero-wrap">
-                            <div class="fh5co-hero-intro text-center">
-                                <h1 class="fh5co-lead"><span class="quo">&ldquo;</span>Design is not just what it looks like and feels like. Design is how it works. <span class="quo">&rdquo;</span></h1>
-                                <p class="author">&mdash; <cite>Steve Jobs</cite></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <footer id="fh5co-footer">
+    <section class="news-box top-margin">
         <div class="container">
+            <h2><span>New Courses</span></h2>
             <div class="row">
-                <div class="col-md-12 col-sm-12">
-                    <p>&copy; @DateTime.Now.Year - Surender Pal Sharma Degree College, Diholi Aligarh UP-202001</p>
+
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="newsBox">
+                        <div class="thumbnail">
+                            <figure><img src="~/assets/images/news2.jpg" alt=""></figure>
+                            <div class="caption maxheight2">
+                                <div class="box_inner">
+                                    <div class="box">
+                                        <p class="title"><h5>Developer</h5></p>
+                                        <p>Lorem ipsum dolor sit amet, conc tetu er adipi scing. Praesent ves tibuum molestie lacuiirhs. Aenean.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="newsBox">
+                        <div class="thumbnail">
+                            <figure><img src="~/assets/images/news3.jpg" alt=""></figure>
+                            <div class="caption maxheight2">
+                                <div class="box_inner">
+                                    <div class="box">
+                                        <p class="title"><h5>Photography   </h5></p>
+                                        <p>Lorem ipsum dolor sit amet, conc tetu er adipi scing. Praesent ves tibuum molestie lacuiirhs. Aenean.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="newsBox">
+                        <div class="thumbnail">
+                            <figure><img src="~/assets/images/news4.jpg" alt=""></figure>
+                            <div class="caption maxheight2">
+                                <div class="box_inner">
+                                    <div class="box">
+                                        <p class="title"><h5>Audio Editing</h5></p>
+                                        <p>Lorem ipsum dolor sit amet, conc tetu er adipi scing. Praesent ves tibuum molestie lacuiirhs. Aenean.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </section>
 
 
 
+    <section class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="title-box clearfix "><h2 class="title-box_primary">About Us</h2></div>
+                <p><span>Perspiciatis unde omnis iste natus error sit voluptatem. Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus musull dui.</span></p>
+                <p>Lorem ipsumulum aenean noummy endrerit mauris. Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Null dui. Fusce feugiat malesuada odio.</p><p>Lorem ipsumulum aenean noummy endrerit mauris. Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Null dui. Fusce feugiat malesuada odio.</p>
+                <a href="#" title="read more" class="btn-inline " target="_self">read more</a>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="title-box clearfix "><h2 class="title-box_primary">Up Coming Courses</h2></div>
+                <div class="list styled custom-list">
+                    <ul>
+                        <li><a title="Snatoque penatibus et magnis dis partu rient montes ascetur ridiculus mus." href="#">Mathematics and Computer Science</a></li>
+                        <li><a title="Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus." href="#">Mathematics and Philosophy</a></li>
+                        <li><a title="Penatibus et magnis dis parturient montes ascetur ridiculus mus." href="#">Philosophy and Modern Languages</a></li>
+                        <li><a title="Morbi nunc odio gravida at cursus nec luctus a lorem. Maecenas tristique orci." href="#">History (Ancient and Modern)</a></li>
+                        <li><a title="Snatoque penatibus et magnis dis partu rient montes ascetur ridiculus mus." href="#">Classical Archaeology and Ancient History</a></li>
+                        <li><a title="Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus." href="#">Physics and Philosophy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @Html.Partial("_Footer")
+ 
     @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+   
+   
+    <script type="text/javascript">
+      
+        jQuery(function () {
 
+            jQuery('#camera_wrap_4').camera({
+                transPeriod: 500,
+                time: 3000,
+                height: '600',
+                loader: 'false',
+                pagination: true,
+                thumbnails: false,
+                hover: false,
+                playPause: false,
+                navigation: false,
+                opacityOnGrid: false,
+                imagePath: '~/assets/images/'
+            });
+
+        });
+
+    </script>
     @*@RenderSection("scripts", required: false)*@
 </body>
+
 </html>

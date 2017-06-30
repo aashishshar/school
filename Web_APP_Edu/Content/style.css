@@ -5611,7 +5611,8 @@ pre {
     width: 70%; } }
 
 #fh5co-clients {
-  padding: 3em 0;
+  height:50px;
+  padding:  0;
   background: #FBB040; }
 #fh5co-clients .fh5co-client-logo {
   text-align: center;
