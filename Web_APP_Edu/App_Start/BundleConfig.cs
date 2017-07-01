@@ -34,7 +34,7 @@ namespace Web_APP_Edu
    
             bundles.Add(new StyleBundle("~/assets/css").Include(
                       "~/assets/css/bootstrap.min.css",
-                      "~/assets/css/font-awesome.min.css", "~/assets/css/bootstrap-theme.css", "~/assets/css/style.css"
+                      "~/assets/css/font-awesome.min.css", "~/assets/css/isotope.css", "~/assets/js/fancybox/jquery.fancybox.css", "~/assets/css/bootstrap-theme.css", "~/assets/css/style.css"
                       , "~/assets/css/camera.css" )); 
                      
             

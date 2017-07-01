@@ -9,11 +9,11 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav pull-right mainNav">
-                <li class="active"><a href="/Home">Home</a></li>
-                <li><a href="@Url.Action("About","Home")">About</a></li>
-                <li><a href="@Url.Action("Courses","Home")">Courses</a></li>
-                <li><a href="@Url.Action("Faculty","Home")">Faculty</a></li>
-                <li><a href="@Url.Action("Gallery","Home")">Gallery</a></li>
+                <li class="@(ViewBag.title == "Home" ? "active" : "") "><a href="/Home">Home</a></li>
+                <li class="@(ViewBag.title == "About" ? "active" : "") "><a href="@Url.Action("About","Home")">About</a></li>
+                <li class="@(ViewBag.title == "Courses" ? "active" : "") "><a href="@Url.Action("Courses","Home")">Courses</a></li>
+                <li class="@(ViewBag.title == "Faculty" ? "active" : "") "><a href="@Url.Action("Faculty","Home")">Faculty</a></li>
+                <li class="@(ViewBag.title == "Gallery" ? "active" : "") "><a href="@Url.Action("Gallery","Home")">Gallery</a></li>
                 @*<li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -23,7 +23,7 @@
                         <li><a href="#">Dummy Link3</a></li>
                     </ul>
                 </li>*@
-                <li><a href="@Url.Action("Contact","Home")">Contact Us</a></li>
+                <li class="@(ViewBag.title == "Contact" ? "active" : "") "><a href="@Url.Action("Contact","Home")">Contact Us</a></li>
 
             </ul>
         </div>
