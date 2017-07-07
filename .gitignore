@@ -154,3 +154,5 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+Web_APP_Edu/Views/Home/Courses.cshtml
+Web_APP_Edu/Views/Home/_Header.cshtml

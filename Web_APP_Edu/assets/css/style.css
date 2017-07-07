@@ -909,7 +909,7 @@ letter-spacing: -2px;
 content: '';
 width: 100%;
 height: initial;
-background: rgba(8, 111, 148, 0.5);
+/*background: rgba(8, 111, 148, 0.5);*/
 z-index: 99999;
 position: absolute;
 height: inherit;

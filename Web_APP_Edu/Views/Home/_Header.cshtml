@@ -4,26 +4,26 @@
             <!-- Button for smallest screens -->
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
             <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo.png" alt="Techro HTML5 template">
+                <img src="~/assets/images/logo.jpg" class="pull-left" height="120" width="50" alt="Techro HTML5 template">
             </a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav pull-right mainNav">
+
                 <li class="@(ViewBag.Title == "Home" ? "active" : "") "><a href="index.html">Home</a></li>
                 <li class="@(ViewBag.Title == "About" ? "active" : "") "><a href="@Url.Action("About","Home")">About</a></li>
                 <li class="@(ViewBag.Title == "Courses" ? "active" : "") "><a href="@Url.Action("Courses", "Home")">Courses</a></li>
                 <li><a href="price.html">Price</a></li>
                 <li><a href="videos.html">Videos</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="sidebar-right.html">Right Sidebar</a></li>
-                        <li><a href="#">Dummy Link1</a></li>
-                        <li><a href="#">Dummy Link2</a></li>
-                        <li><a href="#">Dummy Link3</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
+
+                <li class="@(ViewBag.title == "Home" ? "active" : "") "><a href="/Home">Home</a></li>
+                <li class="@(ViewBag.title == "About" ? "active" : "") "><a href="@Url.Action("About","Home")">About</a></li>
+                <li class="@(ViewBag.title == "Courses" ? "active" : "") "><a href="@Url.Action("Courses","Home")">Courses</a></li>
+                <li class="@(ViewBag.title == "Faculty" ? "active" : "") "><a href="@Url.Action("Faculty","Home")">Faculty</a></li>
+                <li class="@(ViewBag.title == "Gallery" ? "active" : "") "><a href="@Url.Action("Gallery","Home")">Gallery</a></li>
+            
+                <li class="@(ViewBag.title == "Contact" ? "active" : "") "><a href="@Url.Action("Contact","Home")">Contact Us</a></li>
 
             </ul>
         </div>
