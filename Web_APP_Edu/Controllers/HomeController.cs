@@ -40,5 +40,11 @@ namespace Web_APP_Edu.Controllers
 
             return View();
         }
+        public ActionResult Faculty()
+        {
+            ViewBag.Message = "YourFaculty page.";
+
+            return View();
+        }
     }
 }
