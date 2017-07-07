@@ -10,13 +10,6 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav pull-right mainNav">
 
-                <li class="@(ViewBag.Title == "Home" ? "active" : "") "><a href="index.html">Home</a></li>
-                <li class="@(ViewBag.Title == "About" ? "active" : "") "><a href="@Url.Action("About","Home")">About</a></li>
-                <li class="@(ViewBag.Title == "Courses" ? "active" : "") "><a href="@Url.Action("Courses", "Home")">Courses</a></li>
-                <li><a href="price.html">Price</a></li>
-                <li><a href="videos.html">Videos</a></li>
-                <li class="dropdown">
-
                 <li class="@(ViewBag.title == "Home" ? "active" : "") "><a href="/Home">Home</a></li>
                 <li class="@(ViewBag.title == "About" ? "active" : "") "><a href="@Url.Action("About","Home")">About</a></li>
                 <li class="@(ViewBag.title == "Courses" ? "active" : "") "><a href="@Url.Action("Courses","Home")">Courses</a></li>
